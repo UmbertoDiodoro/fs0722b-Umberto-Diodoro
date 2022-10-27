@@ -2,7 +2,7 @@
 /* IMPOSTAZIONI GENERALI */
 body{
     padding: 20px;
-    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-image: url(../img/sfondo.png) ;
 }
 
@@ -34,7 +34,7 @@ header{
     font-weight: 700;
 }
 h1{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.8rem;
     line-height: 40px;
     margin-bottom: 20px;
@@ -178,6 +178,12 @@ button{
 hr{
     margin-top: 40px;
     border: none;
+}
+.fa-calendar-days{
+    margin-right: 10px;
+}
+.fa-tag{
+    margin-right: 5px;
 }
 
 /* ELEMENTI NELL' ASIDE */
