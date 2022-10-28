@@ -15,7 +15,9 @@ header{
     text-align: center;
     background-color: black;
     padding: 40px;
-
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 #logo{
     width: 150px;
@@ -24,6 +26,12 @@ header{
 
 
 /* MAIN */
+
+h3:hover{
+    color: yellow;
+    transition: color 0.5s;
+    transform: scale(2);
+}
 #corsoWeb{
 background-image: url('../images/banner.jpg ') ;
 padding: 20px;
