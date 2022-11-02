@@ -1,0 +1,14 @@
+ button{
+    background-color: #f04c2f;
+    text-align: center;
+    display: block;
+    width: 135px;
+    margin: auto;
+    color: white;
+    padding: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+ }
