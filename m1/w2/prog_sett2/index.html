@@ -18,31 +18,31 @@
             <div class="bottoni">
                 <table>
                     <tr>
-                        <td><button class="bottoni-numeri" id="7">7</button></td>
-                        <td><button class="bottoni-numeri" id="8">8</button></td>
-                        <td><button class="bottoni-numeri" id="9">9</button></td>
-                        <td><button class="bottoni-operazioni" id="diviso">/</button></td>
+                        <td><button data-simbolo="7"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="7">7</button></td>
+                        <td><button data-simbolo="8"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="8">8</button></td>
+                        <td><button data-simbolo="9"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="9">9</button></td>
+                        <td><button data-simbolo="/"onclick="aggiungiCifra(this)" class="bottoni-operazioni" id="diviso">/</button></td>
                     </tr>
                     <tr>
-                        <td><button class="bottoni-numeri" id="4">4</button></td>
-                        <td><button class="bottoni-numeri" id="5">5</button></td>
-                        <td><button class="bottoni-numeri" id="6">6</button></td>
-                        <td><button class="bottoni-operazioni" id="*">*</button></td>
+                        <td><button data-simbolo="4"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="4">4</button></td>
+                        <td><button data-simbolo="5"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="5">5</button></td>
+                        <td><button data-simbolo="6"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="6">6</button></td>
+                        <td><button data-simbolo="*"onclick="aggiungiCifra(this)" class="bottoni-operazioni" id="*">*</button></td>
                     </tr>
                     <tr>
-                        <td><button class="bottoni-numeri" id="1">1</button></td>
-                        <td><button class="bottoni-numeri" id="2">2</button></td>
-                        <td><button class="bottoni-numeri" id="3">3</button></td>
-                        <td><button class="bottoni-operazioni" id="-">-</button></td>
+                        <td><button data-simbolo="1"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="1">1</button></td>
+                        <td><button data-simbolo="2"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="2">2</button></td>
+                        <td><button data-simbolo="3"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="3">3</button></td>
+                        <td><button data-simbolo="-"onclick="aggiungiCifra(this)" class="bottoni-operazioni" id="-">-</button></td>
                     </tr>
                     <tr>
-                        <td><button class="bottoni-operazioni" id="cancella">C</button></td>
-                        <td><button class="bottoni-numeri" id="0">0</button></td>
-                        <td><button class="bottoni-operazioni" id=".">.</button></td>
-                        <td><button class="bottoni-operazioni" id="+">+</button></td>
+                        <td><button data-simbolo="C"onclick="del()" class="bottoni-operazioni" id="cancella">C</button></td>
+                        <td><button data-simbolo="0"onclick="aggiungiCifra(this)" class="bottoni-numeri" id="0">0</button></td>
+                        <td><button data-simbolo="."onclick="aggiungiCifra(this)" class="bottoni-operazioni" id=".">.</button></td>
+                        <td><button data-simbolo="+"onclick="aggiungiCifra(this)" class="bottoni-operazioni" id="+">+</button></td>
                     </tr>
                     <tr>
-                        <td colspan="4"><button class="bottoni-uguale" id="equal">=</button></td>
+                        <td colspan="4"><button data-simbolo="="onclick="tot()" class="bottoni-uguale" id="equal">=</button></td>
                     </tr>
                 </table>
             </div>
