@@ -44,43 +44,47 @@ console.log(me.age);
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
-const skills = ['HTML' , 'CSS', 'JS'] ;
+ skills = ['HTML' , 'CSS', 'JS'] ;
 console.log(skills);
 
 
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
-const push = skills.push('lol');
-console.log(push);
-
+function aggiungielemento(){
+skills.push();
+console.log(skills);
+}
+aggiungielemento('lol')
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
-const pop = skills.pop();
-console.log(pop);
+function rimuovielemento(){
+skills.pop();
+console.log(skills);
+}
+rimuovielemento()
 // Funzioni
 
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
-let numeri = []
+
 function dice() {
-  Math.floor(Math.random() * 6);
+  let random = math.floor(math.random()*5);
+  return random;
 }
 dice()
-console.log(numeri.push);
+
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
-function whoIsBigger(arr) {
-  return Math.max(...arr);
+function whoisbigger(numero1, numero2){
+  if(numero1 > numero2) 
+  return console.log('il numero maggiore tra $(numero1) e $(numero2) è: ' + numero1);
+  else return console.log('il numero maggiore tra $(numero1) e $(numero2) e : ' + numero2 );
 }
-   
-var numbers=[3,775,];
-whoIsBigger(numbers);
-
-console.log(whoIsBigger(numbers));
+whoisbigger(10,35);
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
@@ -112,7 +116,7 @@ deleteOne(false,"ciao")
 /*
 test = function onlyletters() {
 let onlyLetters=("I have 4 dogs")
-newletters = onlyLetters.replace(/[0,9]/g,'')
+newletters = onlyLetters.replace(/[0-9]/g,'')
 return newletters
 }
 console.log(newletters);
@@ -134,23 +138,12 @@ console.log();
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
-(function() {
-  var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-
-  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-
-  Date.prototype.getMonthName = function() {
-      return months[ this.getMonth() ];
-  };
-  Date.prototype.getDayName = function() {
-      return days[ this.getDay() ];
-  };
-})();
-
-var now = new Date();
-
-var day = now.getDayName();
-var month = now.getMonthName();
+function whatDayIsIt(){
+  let Date = new Date()
+  console.log('giornosettimana:' + date.getdate());
+  return date.getdate()
+}
+whatDayIsIt()
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
   Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, e deve tornare un oggetto contenente una proprietà "sum":
@@ -163,7 +156,17 @@ var month = now.getMonthName();
       values: [3, 3, 4]
   }
 */
-
+function rollTheDices(numero){
+  let oggetto ={};
+  let array = [];
+  for (let i = 0;i <= numero; i++){
+    array.push(dice());
+  }
+  oggetto.values = array;
+  oggetto.sun = eval(array.join('+'))
+  console.log(oggetto);
+}
+rollTheDices(10)
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
@@ -171,7 +174,15 @@ var month = now.getMonthName();
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
-
+function isTodayMyBirthday(){
+  let Date = new Date();
+  let giornocompleanno = 7;
+  let mesecompleanno = 8;
+  if(giornocompleanno == DataTransfer.getdate()&& mesecompleanno == Date.getmonth()+1)
+  return console.log(true);
+  else console.log(false);
+}
+isTodayMyBirthday()
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
@@ -188,23 +199,52 @@ var month = now.getMonthName();
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
-
+function countMovies(){
+  console.log('film totali archivio' + movies.length);
+  return movies.length
+}
+countMovies()
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
-
+const onlyTheYears= function(){
+  let moviesdate = [];
+  for (i =0; i<listmovies.lenght; i++){
+    moviesdate.push(listmovies[i].Year);
+  }
+  console.log(moviesdate);
+}
+onlyTheYears()
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+const onlyInLastMillennium = function(){
+  let result = []
+  for ( i= 0; i<movies.length; i++){
+    if (parseInt(movies[i].Year)<2000)
+    result.push(movies[i])
+  }
+  return result
+}
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
-
+function sumAllTheYears(){
+  let arrayears = [];
+  let calc = 0;
+  for( let i =0; i< movies.length; i++){
+    arrayears.push(movies[i].Year)
+  }
+  calc = arrayears = eval(arrayyears.join('+'));
+  console.log(calc);
+  return calc
+}
+sumAllTheYears();
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-/*
+
 function searchByTitle(nomeFilm){
   let NameMovies = [];
   let filtro;
@@ -224,17 +264,34 @@ searchByTitle('Avengers')
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
-
+function removeIndex(numero){
+  for ( let i = 0; i< movies.length; i++){
+    if(i == numero)
+    {
+      movies.splice(numero, 1)
+      console.log(movies);
+    }
+  }
+  return movies
+}
+removeIndex(5);
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
+function selecontainer(){
+const Dom = document.getElementById("#container");
+return Dom;
+}
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-
+function selectag(){
+const td = document.getElementsByTagName('td');
+return td;
+}
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
