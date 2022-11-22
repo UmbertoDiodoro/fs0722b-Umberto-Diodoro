@@ -90,7 +90,7 @@ header nav li a::before {
 /* MAIN */
 #bottonepiù{
   position: fixed;
-  top: 623px;
+  top: 568px;
   right: -14px;
   font-size: 2rem;
   padding: 15px;
@@ -103,7 +103,7 @@ header nav li a::before {
 
 #bottonecal{
   position: fixed;
-  top: 707px;
+  top: 645px;
   right: -12px;
   font-size: 2rem;
   padding: 15px;
@@ -114,7 +114,7 @@ header nav li a::before {
 }
 #back-to-top-button{
   position: fixed;
-  top: 789px;
+  top: 732px;
   right: -12px;
   font-size: 2rem;
   padding: 15px;
