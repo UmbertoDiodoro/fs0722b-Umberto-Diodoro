@@ -1,0 +1,28 @@
+body{
+    align-items: center;
+    display: flex;
+}
+article{
+    display: flex;
+    background-color: #fbf7e3;
+    flex-direction: column;
+    width: 80vw;
+    padding: 5vw;
+    border-radius: 5px;
+}
+article img{
+    width: 80vw;
+}
+@media screen  and (min-width: 768px) {
+    article{
+        flex-direction: row;
+    }
+    article div{
+        order: 2;
+        margin-left: 2vw;
+    }
+    article img{
+        order: 1;
+        width: 50%;
+    }
+}
