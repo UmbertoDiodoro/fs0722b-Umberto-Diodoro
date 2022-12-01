@@ -1,0 +1,49 @@
+@import 'header';
+@import 'footer';
+@import 'main';
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    div {
+        span {
+            position: relative;
+            top: 29px;
+        }
+
+        form {
+            border: 1px solid black;
+
+            input:nth-child(1) {
+                margin-top: 15px;
+                margin-left: 10px;     
+                display: block;
+            }
+            input:nth-child(1):focus{
+                outline: solid 2px #6285f9;
+            }
+
+            input:nth-child(2) {
+                margin-left: 10px;
+                display: block;
+                
+            }
+            input:nth-child(2):focus{
+                outline: solid 2px #6285f9;
+            }
+
+            textarea{
+                margin-left: 10px;
+                margin-bottom: 20px;
+                display: block;
+                width: 200px;
+            }
+            textarea:focus{
+                outline: solid 2px #6285f9;
+            }
+
+        }
+    }
+}

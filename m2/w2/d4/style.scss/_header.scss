@@ -1,0 +1,23 @@
+header {
+    border-radius: 10px;
+    background: #170a48;
+
+    nav {
+       
+        ul {
+            padding: 15px 20px;
+            margin-top: 5px;
+
+            li {
+                margin-right: 2vw;
+                display: inline-block;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
