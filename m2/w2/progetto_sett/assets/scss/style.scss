@@ -1,0 +1,42 @@
+@import 'function';
+@import 'variables';
+@import 'main';
+@import 'svg';
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Roboto:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: $main-width;
+    
+    p{
+        font-weight: 400;
+        font-family: 'Didot';
+    }
+
+    h1,h2.h3,h4,h5,h6{
+        font-weight: 700;
+        font-family: 'Roboto';
+    }
+
+    header {
+        background: #772cf3;
+    }
+
+    
+
+    footer {
+        background-color: #772cf3;
+        color: white;
+
+        p {
+            padding-bottom: 10px;
+            margin-bottom: 0;
+           
+        }
+    }
+    .row {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,10 @@
+$template:bright;
+$bg-dark: #000;
+$fg-bright: #252850;
+
+body{
+    @if $template == dark {
+        background-color: $bg-dark;
+        color: $fg-bright;
+    } 
+}
