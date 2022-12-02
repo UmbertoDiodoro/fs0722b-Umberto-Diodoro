@@ -55,6 +55,10 @@ main .carousel-img {
   height: 10%;
   border-radius: 50%;
 }
+main p {
+  padding: 20px;
+  margin: 0;
+}
 
 main #card svg {
   width: 50px;
